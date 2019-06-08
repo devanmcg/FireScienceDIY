@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://diyfirescience.netlify.com"
 title = "DIY Fire Science"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"
