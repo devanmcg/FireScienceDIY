@@ -1,4 +1,5 @@
 baseurl = "http://diyfirescience.netlify.com"
+publishDir = "."
 title = "DIY Fire Science"
 theme = "themes/hugo-creative-portfolio-theme"
 languageCode = "en-us"
