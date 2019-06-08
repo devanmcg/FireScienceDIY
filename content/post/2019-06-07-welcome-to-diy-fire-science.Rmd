@@ -1,0 +1,10 @@
+---
+title: Welcome to DIY Fire Science
+author: ~
+date: '2019-06-07'
+slug: welcome-to-diy-fire-science
+categories: []
+tags: []
+---
+
+Trying to make a new page!
