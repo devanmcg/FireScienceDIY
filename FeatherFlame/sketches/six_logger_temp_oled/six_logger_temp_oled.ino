@@ -1,9 +1,9 @@
 // FeatherFlame M0
-// 6 K-type theromocouples
+// 6 K-type theromocouples (MAX31855)
 // Data logging
 // OLED screen
-// RTC
-// TMP36 for case interior temp
+// RTC (DS3231)
+// Optional: Interior case temp (TMP36)
 
 #include <SPI.h>
 #include <Wire.h>
@@ -16,13 +16,13 @@
 /************ OLED Setup ***************/
 Adafruit_SSD1306 oled = Adafruit_SSD1306();
 
-//RTC
+//Real-time clock (RTC)
 RTC_DS3231 rtc;
 
 int StartSec = 0; 
 int counter = 0;
 
-// Thermocouple definitions
+// Define I/O on Feather M0 for thermocouples
 #define DO   10
 #define CLK  12
 #define CS1   A1
@@ -31,13 +31,11 @@ int counter = 0;
 #define CS4   A4
 #define CS5   A5
 #define CS6   6
-//#define CS7   5
-//#define CS8   9
 
 // Logger 
 const int chipSelect = 4;
 
-// Thermometer inside the case
+// For when the optional TMP36 is installed inside the case
 int TempSense = A0 ; 
 
 // Set number of thermocouples
@@ -54,7 +52,6 @@ Adafruit_MAX31855 thermocouple3(CLK, CS3, DO);
 Adafruit_MAX31855 thermocouple4(CLK, CS4, DO);
 Adafruit_MAX31855 thermocouple5(CLK, CS5, DO);
 Adafruit_MAX31855 thermocouple6(CLK, CS6, DO);
-// Adafruit_MAX31855 thermocouple7(CLK, CS7, DO);
 
 // Data structure
 
@@ -66,13 +63,12 @@ struct dataStruct{
   float tc4 ;
   float tc5 ;
   float tc6 ;
-  float CaseTempC ; 
+  float CaseTempC ; // optional for interior case temp
    }SixLoggerData;
 
 void setup()   {                
  // while (!Serial);  // uncomment to have the sketch wait until Serial is ready
  Serial.begin(115200);
-
 
   oledInit() ;
   rtc.begin();
@@ -84,22 +80,19 @@ void setup()   {
 
 void loop() {
 
+// Sketch operations defined as subroutines below and called here
  TimeStamper(); 
- CaseTemp() ; 
+ CaseTemp() ;  // optional subroutine
  TempStruct6() ;
  TempLog() ;
- //oledTest() ; 
  oledSixLogger() ; 
- SerialDisplay() ;
+ // SerialDisplay() ; // optional subroutine for testing in lab 
  delay(LogInt) ; 
  
 }
 
-
-
-
 void SDcheck (void) {
-if (!SD.begin(chipSelect)) {
+	if (!SD.begin(chipSelect)) {
    Serial.println("Card failed, or not present");
    oled.setTextSize(1.5);
     oled.setTextColor(WHITE);
@@ -109,8 +102,6 @@ if (!SD.begin(chipSelect)) {
    oled.println("Card failed...");
    oled.println("...or not in?");
        oled.display();
-     
-// don't do anything more:
  return;
  }
 
@@ -217,7 +208,7 @@ void RTCcheck (void) {
 }
 
 void CaseTemp (void) {
-// Get case interior temperature
+// This optional subroutine reads the TMP36 for interior temperature. 
    int InnerTherm = analogRead(TempSense); 
    float voltage = InnerTherm * 3.3;
     voltage /= 1024.0; 
@@ -240,7 +231,6 @@ void TempRead6 (void) {
   temp[4] = thermocouple4.readCelsius();
   temp[5] = thermocouple5.readCelsius();
   temp[6] = thermocouple6.readCelsius();
-  //temp[7] = thermocouple7.readCelsius();
       }
       
 void TimeStamper (void) {
@@ -305,17 +295,6 @@ void oledSixLogger (void) {
           oled.print("3: "); oled.print(SixLoggerData.tc3); oled.print(", "); 
             oled.print("6: ");  oled.println(SixLoggerData.tc6); 
      oled.display();
-}
-
-void oledTest (void) {
-    oled.setTextSize(1);
-    oled.setTextColor(WHITE);
-    oled.setCursor(0,0);
-    oled.clearDisplay();
-         delay(1);
-         oled.println(SixLoggerData.timestamp); 
-         oled.print("tc1:"); oled.println(SixLoggerData.tc1) ; 
-      oled.display();
 }
 
 void SerialDisplay (void) {
