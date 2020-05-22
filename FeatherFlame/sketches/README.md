@@ -8,6 +8,7 @@ Use these files to program the FeatherFlame via the [Arduino IDE](https://www.ar
 * DS3231 precision real-time clock (optional)
 * TMP36 temperature sensor (optional) 
 
-`force_RTC_reset.ino` just forces a reset of the real-time clock in the DS3231, which the script *should* do automatically, but when synchronised timestamps are important for all dataloggers deployed for a fire event, one can't be too careful!
-
 <img src="https://github.com/devanmcg/FireScienceDIY/blob/master/FeatherFlame/PCB/FeatherFlame6tc_bb.png" width="600">
+
+`force_RTC_reset.ino` just forces a reset of the real-time clock in the DS3231, which the script *should* do automatically, but when synchronised timestamps are important for all dataloggers deployed for a fire event, one can't be too careful!
+If you have problems getting synchronised timestamps, make sure the coin batteries are good and see if this script helps you get back on track.
