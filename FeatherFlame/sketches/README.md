@@ -3,6 +3,7 @@ Use these files to program the FeatherFlame via the [Arduino IDE](https://www.ar
 `six_logger_temp_oled.ino` assumes the following components from the [FeatherFlame wishlist](http://www.adafruit.com/wishlists/459876) on [adafruit.com](http://adafruit.com) are connected as in the [fritzing](http://www.fritzing.org) image below. 
 For easy assembly and compact, durable field use, I've posted [plans for a PCB based on this sketch](https://github.com/devanmcg/FireScienceDIY/tree/master/FeatherFlame/PCB). 
 Users can order fabrication of the PCB directly from [OSH Park](https://oshpark.com/shared_projects/cAXzsQJw). 
+I'm also a fan of [jlcpcb](https://jlcpcb.com). 
 
 * Feather M0 Adalogger (microcontroller board + microSD card for data storage)
 * 1-6 K-type theromocouples, each connected via a MAX31855 board
