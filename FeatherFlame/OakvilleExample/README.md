@@ -1,7 +1,7 @@
 
 ## Packages \& data 
 
-I'm partial to using *pacman* for package installation and loading ¯\_(ツ)_/¯ 
+I'm partial to using *pacman* for package installation and loading ¯\\_(ツ)_/¯ 
 
 ``` r
 if (!require("pacman")) install.packages("pacman")
@@ -128,7 +128,7 @@ First, we find the row in which each thermocouple in the triangular array record
           slice(which.max(temp)) %>%
         ungroup 
 ```
-This chunk is where the magic happens: via a `dplyr` pipe we crunch the equations provided by [Simard et al. (1982)](https://doi.org/10.1007/BF02473134) to calculate how fast the flame front moved through the triangular array, using the seconds of peak temperature as the arrival time at each point:
+This chunk is where the magic happens: via a *dplyr* pipe we crunch the equations provided by [Simard et al. (1982)](https://doi.org/10.1007/BF02473134) to calculate how fast the flame front moved through the triangular array, using the seconds of peak temperature as the arrival time at each point:
 
 ``` r
 # Define the sides of the array equilateral triangle 
