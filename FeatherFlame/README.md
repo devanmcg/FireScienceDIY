@@ -15,7 +15,7 @@ The system relies on [Adafruit Industries](adafruit.com) Feather system of small
 
 * [Adafruit wishlist]( http://www.adafruit.com/wishlists/459876)
 * Thermocouples \& wire from [Omega Engineering](omega.com)
-  - [Overbraided ceramic fiber insulated K-type thermocouple leads](https://www.omega.com/pptst/XCIB.html)
+  - [Overbraided ceramic fiber insulated K-type thermocouple probes](https://www.omega.com/pptst/XCIB.html)
   - [Connectors](https://www.omega.com/pptst/SMPW-CC.html). 
   Plastic are fine if protected from fire (see below).
   Ceramic are nice but expensive.
