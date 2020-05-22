@@ -4,7 +4,8 @@
 
 ## Software 
 
-Program the FeatherFlame for 1-6 thermocouple sensors via [sketches](https://github.com/devanmcg/FireScienceDIY/tree/master/FeatherFlame/sketches) for the [Arduino IDE](https://www.arduino.cc/en/Main/Software). 
+* Program the FeatherFlame for 1-6 thermocouple sensors via [sketches](https://github.com/devanmcg/FireScienceDIY/tree/master/FeatherFlame/sketches) for the [Arduino IDE](https://www.arduino.cc/en/Main/Software). 
+* Learn how to import data into the [**R** statistical environment](https://www.r-project.org) and calculate rate of spread using [example data](https://github.com/devanmcg/FireScienceDIY/tree/master/FeatherFlame/OakvilleExample) from the University of North Dakota's Oakville Prairie. 
 
 <img src="https://github.com/devanmcg/FireScienceDIY/blob/master/FeatherFlame/PCB/FeatherFlame6tc_bb.png" width="600">
 
