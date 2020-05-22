@@ -27,7 +27,7 @@ The system relies on [Adafruit Industries](adafruit.com) Feather system of small
   I use a galvanized 26 gauge, 10-inch round HVAC cap from the hardware store. 
   - *Steel junction boxes* for plastic TC connectors \& *metal conduit* for the leads. 
   While these aren't totally necessary (the connectors can be wrapped in foil, etc) they really pay off. 
-  Otherwise the lead wires will get lback and brittle, will get jumbled in storage and knotted in transit, and will get itchy fiberglass into one's hands whenever handling them. 
+  Otherwise the lead wires will turn black and brittle, will get jumbled in storage and knotted in transit, and will get itchy fiberglass into one's hands whenever handling them. 
   All components last longer when protected from heat and flame. 
   Use leads several meters long to get datalogger away from probe ends and remove fuels around components.
  
