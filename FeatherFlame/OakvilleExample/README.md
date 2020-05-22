@@ -1,6 +1,7 @@
 Here we work through [OakvilleExampleScript.R](https://github.com/devanmcg/FireScienceDIY/raw/master/FeatherFlame/OakvilleExample/OakvilleExampleScript.R) to bring the raw data files from the FeatherFlame dataloggers into **R**, plot the time-temperature relationships, and calculate rate of spread through the triangular array: 
 
-<img src="https://github.com/devanmcg/FireScienceDIY/raw/master/FeatherFlame/OakvilleExample/PostBurnTriangle.JPG" width="600" caption="The FeatherFlame datalogger after the fire, with the thermocouple probes fixed in their equilateral triangle configuration.">
+<img src="https://github.com/devanmcg/FireScienceDIY/raw/master/FeatherFlame/OakvilleExample/PostBurnTriangle.JPG" width="600">
+<span class="image-caption">The FeatherFlame datalogger after the fire, with the thermocouple probes fixed in their equilateral triangle configuration.</span>
 
 ## Packages \& data 
 
