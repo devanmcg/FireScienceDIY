@@ -27,5 +27,17 @@ Illustrated schematic of parts and wiring:
   
 FeatherFlame protected from fire in the field:
 <img src="https://github.com/devanmcg/FireScienceDIY/blob/master/FeatherFlame/OakvilleExample/FeatherFlame.png" width="1000">
+
+(A) Three stackable Feather boards - M0 Adalogger, datalogging shield, and OLED display - in the prototype. 
+The board has microSD removable storage and an ATmega microcontroller. 
+3.7v li-po battery not shown.
+    
+(B) An example of how the FeatherFlame is deployed *in agris*. 
+We affix three thermocouple probes to rods that form a 1m equilateral triangle 15cm from the ground, a fourth probe on the soil surface, and a fifth probe in the center of the triangle. 
+       
+(C) The dataloggers are protected from surface flame fronts by first scraping away vegetative matter so the box can be placed on mineral soil, then covering with a galvanized steel HVAC end cap. 
+   Dataloggers are placed away from the probe array to minimize disruption to fuels around the probes, which is made possible by leads protected by flexible metal conduit or high-temperature foil HVAC tape.
+   
+(D) The steel junction box protects the connectors between the overbraided thermocouple probes and the leads from the datalogger. 
   
 
