@@ -1,11 +1,15 @@
 Use these files to program the FeatherFlame via the [Arduino IDE](https://www.arduino.cc/en/Main/Software). 
 
-`six_logger_temp_oled.ino` assumes the following components from the [FeatherFlame wishlist](http://www.adafruit.com/wishlists/459876) on [adafruit.com](http://adafruit.com):
-* Feather M0 Adalogger (microcontroller board + microSD card for data storage)
-* 1-6 K-type theromocouples, each connected via a MAX31855 board
-* OLED screen (optional)
-* DS3231 precision real-time clock (optional)
-* TMP36 temperature sensor (optional) 
+`six_logger_temp_oled.ino` 
+
+* Assumes the following components from the [FeatherFlame wishlist](http://www.adafruit.com/wishlists/459876) on [adafruit.com](http://adafruit.com):
+  - Feather M0 Adalogger (microcontroller board + microSD card for data storage)
+  - 1-6 K-type theromocouples, each connected via a MAX31855 board
+  - OLED screen (optional)
+  - DS3231 precision real-time clock (optional)
+  - TMP36 temperature sensor (optional) 
+
+* Assumes the above components are connected as such:
 
 <img src="https://github.com/devanmcg/FireScienceDIY/blob/master/FeatherFlame/PCB/FeatherFlame6tc_bb.png" width="600">
 
