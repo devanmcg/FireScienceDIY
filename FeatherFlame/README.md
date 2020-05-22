@@ -16,9 +16,20 @@ The system relies on [Adafruit Industries](adafruit.com) Feather system of small
 * [Adafruit wishlist]( http://www.adafruit.com/wishlists/459876)
 * Thermocouples \& wire from [Omega Engineering](omega.com)
   - [Overbraided ceramic fiber insulated K-type thermocouple leads](https://www.omega.com/pptst/XCIB.html)
-  - [Connectors](https://www.omega.com/pptst/SMPW-CC.html)
+  - [Connectors](https://www.omega.com/pptst/SMPW-CC.html). 
+  Plastic are fine if protected from fire (see below).
+  Ceramic are nice but expensive.
   - Extra TC wire for leads: [Part number HH-K-24-SLE-50](https://www.omega.com/pptst/SLE_Wire.html)
-  - A [PCB](https://github.com/devanmcg/FireScienceDIY/tree/master/FeatherFlame/PCB) design that one can order themselves from [OSH Park](https://oshpark.com/shared_projects/cAXzsQJw).
+* A [PCB](https://github.com/devanmcg/FireScienceDIY/tree/master/FeatherFlame/PCB) design that one can order themselves from [OSH Park](https://oshpark.com/shared_projects/cAXzsQJw).
+* Fire protection
+  - A heavy-duty box; I use the Pelican 1020 case mostly because there was a pile of them in my lab when I started my job. 
+  - A low, round metal canister to protect the Pelican case from melting. 
+  I use a galvanized 26 gauge, 10-inch round HVAC cap from the hardware store. 
+  - *Steel junction boxes* for plastic TC connectors \& *metal conduit* for the leads. 
+  While these aren't totally necessary (the connectors can be wrapped in foil, etc) they really pay off. 
+  Otherwise the lead wires will get lback and brittle, will get jumbled in storage and knotted in transit, and will get itchy fiberglass into one's hands whenever handling them. 
+  All components last longer when protected from heat and flame. 
+  Use leads several meters long to get datalogger away from probe ends and remove fuels around components.
  
 ### Images
 
