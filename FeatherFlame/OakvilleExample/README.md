@@ -1,7 +1,7 @@
 
 ## Packages \& data 
 
-I'm partial to using *pacman* for package installation and loading ¯\\_(ツ)_/¯ 
+I'm partial to using *pacman* for package installation and loading ¯\\\_(ツ)\_/¯ 
 
 ``` r
 if (!require("pacman")) install.packages("pacman")
