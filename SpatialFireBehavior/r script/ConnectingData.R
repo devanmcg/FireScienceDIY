@@ -1,8 +1,5 @@
 pacman::p_load(tidyverse)
 
-setwd("C:/Users/Devan.McGranahan/GoogleDrive/Research/Projects/SpatialFireBehavior")
-
-load("./r objects/BurnIDs.Rdata")
 load("./r objects/wx_d.Rdata")
 load("./r objects/ROS.Rdata")
 load("./r objects/fuels.Rdata")
