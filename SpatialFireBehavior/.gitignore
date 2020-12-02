@@ -1,0 +1,16 @@
+*.Rproj.user
+*.Rproj
+*.Rhistory
+.Ruserdata
+.gdoc
+.log
+.gsheet
+.httr-oauth
+*.ini
+.jpeg
+
+CGREC_2019_fuels.csv 
+
+mapping/
+Fire spread/
+data management/
