@@ -1,10 +1,8 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.Rmd
+*.Rproj.user
+*.Rhistory
+*.Ruserdata
+
 
 ThermocoupleComparison/
 SRMtalk/
-data/
-resources/
+
