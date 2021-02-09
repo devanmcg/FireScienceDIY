@@ -3,9 +3,8 @@
 .RData
 .Ruserdata
 .Rmd
+*.knit.md
+*.utf8.md
 
-SimardROS.R
-LoadingOakville.R
-OakvilleAnalysis.R
-OakvillePlots.html
-OakvillePlots.Rmd
+
+
