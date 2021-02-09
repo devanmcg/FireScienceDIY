@@ -61,8 +61,7 @@ for(i in 1:length(tc_files)){
     rough_windows %>%
     filter(event == e ,  
            obs <= m) %>%
-      bind_rows(HeatingCurves) %>%
-      select(-obs) -> HeatingCurves
+      bind_rows(HeatingCurves) -> HeatingCurves
   }
   
 }
