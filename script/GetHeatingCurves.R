@@ -8,7 +8,7 @@ HeatingCurves <- tibble()
 
 for(i in 1:length(tc_files)){
   rd <- 
-  paste0(hobo_fp, tc_files[i]) %>%
+  paste0(FilePath, tc_files[i]) %>%
     read_csv(skip = 2, col_names = c('obs', 'timestamp', 'degC')) 
   
   x11() 
